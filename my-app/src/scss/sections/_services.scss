@@ -1,0 +1,59 @@
+@use '../custom' as *;
+
+
+.services-mf {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+  
+    .title-box {
+      margin-bottom: 40px;
+    }
+  
+    .row {
+      .service-box {
+        position: relative;
+        background-color: #ffffff; // Cor de fundo branca
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+  
+        .ico-circle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70px; // Ajuste o tamanho conforme necessário
+          height: 70px; // Ajuste o tamanho conforme necessário
+          background-color: #28a745; // Cor do círculo
+          color: #ffffff; // Cor do ícone
+          font-size: 2rem;
+          border-radius: 50%;
+          margin: 0 auto 15px; // Ajuste a margem conforme necessário
+          transition: background-color 0.3s ease-in-out;
+  
+          i {
+            transition: color 0.3s ease-in-out;
+          }
+        }
+  
+        &:hover {
+          .ico-circle {
+            background-color: #28a745; // Cor do círculo ao passar o mouse
+            i {
+              color: white;  // Cor do ícone ao passar o mouse
+            }
+          }
+        }
+  
+        .service-content {
+          h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+          }
+  
+          .s-description {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
